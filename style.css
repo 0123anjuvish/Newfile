@@ -1,10 +1,105 @@
-body{
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@300;400;7008");
+
+*{
+    /* position:relative; */
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+    body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url("./img4.png"),
+   
+    radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+    font-family: 'Roboto',sans;
     background-color: beige;
 
 }
-.container{
-    margin: 1rem;
-    padding:1rem;
-    background-color: black;
-    color: antiquewhite;
+.box{
+    /* position: relative; */
+    width: 500px;
+    height: 300px;
+    background-image: url("./img3.png");
+    
+    border-radius: 20px;
+    padding: 20px;
+}
+.box h2{
+    text-align: center;
+    color: rgb(221, 147, 50);
+    opacity: .8;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.box textarea{
+    margin-left: 1rem;
+    width: 90% !important;
+    height: 220px;
+    resize: none;
+    border-radius: 2px;
+    border:none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    //color: #555;
+    background-image: url("./img3.png")
+}
+.box textarea::placeholder{
+    color: #231c29;
+}
+.box div{
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: rgb(230, 123, 36);
+    font-weight: 700;
+   
+}
+#vowelCount{
+    margin-left: .6rem;
+    display: inline-block;
+    background: #f3cd22;
+    color: rgb(32, 26, 5);
+    border-radius: 20px;
+    width: 60px;
+}
+#vowelCount:hover{
+    opacity: 0.3px;
+    background-color: rgb(56, 73, 73);
+    cursor: pointer;
+}
+#check-btn{
+    background-image: linear-gradient(to right, #870000, #190a05);
+      justify-content: center;
+      text-align: center;
+      margin-left: 148px;
+      font-weight: 700;
+      color:antiquewhite ;
+      font-family: inherit;
+      font-size: 1.05rem;
+      padding: 0.7rem 2rem;
+      cursor: pointer;
+      outline:0;
+      letter-spacing: .5px;
+      transition: opacity 0.5s ease;
+      border-radius: 1.5rem;
+      border: none;
+}
+#check-btn:hover{
+    opacity: 0.1;
+}
+@media screen and(min-width:480px) {
+    .box{
+        width:400px;
+    }
+    
 }
